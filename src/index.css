@@ -8,3 +8,16 @@ body {
 body {
   margin: 0;
 }
+
+/* Hide v0.dev attribution badge if injected at runtime */
+[data-v0-badge],
+#v0-badge,
+.v0-badge,
+[class*="v0-badge"],
+[class^="v0-"],
+[class*=" v0-"] {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
