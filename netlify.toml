@@ -1,0 +1,11 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# SPA fallback (also covered by public/_redirects, but keeping this
+# makes the config self-contained for Netlify).
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
